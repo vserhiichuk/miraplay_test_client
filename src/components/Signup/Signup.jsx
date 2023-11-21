@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../../api/userApi";
 import { useMutation } from "react-query";
+import SignupForm from "../SignupForm/SignupForm";
 import "./Signup.scss";
 
 export const Signup = () => {
@@ -13,10 +14,6 @@ export const Signup = () => {
   });
   const [error, setError] = useState("");
   const navigate = useNavigate();
-
-  const handleChange = ({ currentTarget: input }) => {
-    setData({ ...data, [input.name]: input.value });
-  };
 
   const mutation = useMutation(
     async () => {
@@ -43,6 +40,10 @@ export const Signup = () => {
     }
   );
 
+  const handleChangeForm = ({ currentTarget: input }) => {
+    setData({ ...data, [input.name]: input.value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -62,50 +63,13 @@ export const Signup = () => {
         </div>
 
         <div className="signup__right">
-          <form action="" className="signup__form" onSubmit={handleSubmit}>
-            <h1 className="signup__form--title">Create Account</h1>
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              onChange={handleChange}
-              value={data.firstName}
-              className="signup__input"
-              required
-            />
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              onChange={handleChange}
-              value={data.lastName}
-              className="signup__input"
-              required
-            />
-            <input
-              type="text"
-              name="email"
-              placeholder="Email"
-              onChange={handleChange}
-              value={data.email}
-              className="signup__input"
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              onChange={handleChange}
-              value={data.password}
-              className="signup__input"
-              required
-            />
-
-            {error && <div className="signup__error">{error}</div>}
-            <button type="submit" className="signup__button--second">
-              Sign Up
-            </button>
-          </form>
+          <SignupForm
+            data={data}
+            handleChangeForm={handleChangeForm}
+            handleSubmit={handleSubmit}
+            error={error}
+            isLoading={mutation.isLoading}
+          />
         </div>
       </div>
     </div>

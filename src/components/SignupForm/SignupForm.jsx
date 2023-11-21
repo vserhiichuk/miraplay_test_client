@@ -1,14 +1,14 @@
 import React from 'react';
 import './SignupForm.scss';
 
-const SignupForm = ({ data, handleChange, handleSubmit, error, isLoading }) => (
+const SignupForm = ({ data, handleChangeForm, handleSubmit, error, isLoading }) => (
   <form action="" className="signup__form" onSubmit={handleSubmit}>
     <h1 className="signup__form--title">Create Account</h1>
     <input
       type="text"
       name="firstName"
       placeholder="First Name"
-      onChange={handleChange}
+      onChange={handleChangeForm}
       value={data.firstName}
       className="signup__form--input"
       required
@@ -17,7 +17,7 @@ const SignupForm = ({ data, handleChange, handleSubmit, error, isLoading }) => (
       type="text"
       name="lastName"
       placeholder="Last Name"
-      onChange={handleChange}
+      onChange={handleChangeForm}
       value={data.lastName}
       className="signup__form--input"
       required
@@ -26,7 +26,7 @@ const SignupForm = ({ data, handleChange, handleSubmit, error, isLoading }) => (
       type="text"
       name="email"
       placeholder="Email"
-      onChange={handleChange}
+      onChange={handleChangeForm}
       value={data.email}
       className="signup__form--input"
       required
@@ -35,7 +35,7 @@ const SignupForm = ({ data, handleChange, handleSubmit, error, isLoading }) => (
       type="password"
       name="password"
       placeholder="Password"
-      onChange={handleChange}
+      onChange={handleChangeForm}
       value={data.password}
       className="signup__form--input"
       required
