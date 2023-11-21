@@ -4,7 +4,7 @@
 - [✨DEMO✨](https://vserhiichuk.github.io/miraplay_test_client/login)
 
  <h2 align="center">📋About📋</h2>
- 
+
 "Miraplay" is an online game store that transports players into the captivating world of virtual adventures. With a wide range of games for various platforms and genres, every gamer can find something to suit their taste.
 
 The modern and user-friendly design of the "Miraplay" website makes it easy to search for games, read reviews, and choose the hottest releases. The convenient payment system and instant delivery ensure that your gaming journey begins as quickly as possible.
@@ -20,7 +20,6 @@ The "Miraplay" team is dedicated to satisfying its customers, providing the high
  - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
  - ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
  - ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
- - ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
  - React-Toastify
  - Prettier
 
