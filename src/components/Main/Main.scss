@@ -1,0 +1,39 @@
+.games {
+  font-family: Neue Machina;
+  
+  margin-inline: 170px;
+
+  &__title {
+    margin-top: 20px;
+    color: white;
+  }
+}
+
+.games__categories {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 25px 0;
+}
+
+.games__button {
+  background-color: #242424;
+  border: 1px solid #454545;
+  border-radius: 20px;
+  color: #eaeaea;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  height: 78px;
+  line-height: 143%;
+  margin: 41px auto 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  width: 370px;
+
+  margin-bottom: 30px;
+}
