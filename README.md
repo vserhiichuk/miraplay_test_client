@@ -1,7 +1,7 @@
 <h1 align="center">🔥Miraplay🔥</h1>
 
 - [✨WEBSITE✨](https://miraplay.cloud/)
-- [✨DEMO✨](https://vserhiichuk.github.io/miraplay_test_client/login)
+- [✨DEMO✨](https://vserhiichuk.github.io/miraplay_test_client)
 
  <h2 align="center">📋About📋</h2>
 
