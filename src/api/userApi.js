@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'https://miraplay-test-server-sqsv.onrender.com/api';
 
 export const loginUser = async (userData) => {
   try {
