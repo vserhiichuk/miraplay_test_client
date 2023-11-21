@@ -2,7 +2,9 @@ import { useQuery } from "react-query";
 import { Navbar } from "../Navbar";
 import { useState } from "react";
 import { fetchGamesByPage } from "../../api/gamesApi";
+import { v4 as uuidv4 } from 'uuid';
 import { Loader } from "../Loader";
+
 import GamesList from "../GamesList/GamesList";
 import CategoryButton from "../CategoryButton/CategoryButton";
 import "./Main.scss";
@@ -74,7 +76,7 @@ export const Main = () => {
 
             return (
               <CategoryButton
-                key={item}
+                key={uuidv4()}
                 cat={item}
                 isActive={category === formatCategory}
                 onClick={() => handleChangeCategory(formatCategory)}
