@@ -14,6 +14,8 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Navigate replace to="login" />} />
+
+      <Route path="*" element={<h1>Page not found</h1>} /> 
     </Routes>
   );
 }
