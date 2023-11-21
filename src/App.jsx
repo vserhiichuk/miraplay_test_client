@@ -6,11 +6,11 @@ import { Main } from "./components/Main";
 import "./App.scss";
 
 function App() {
-  const user = useSelector((state) => state.auth.token);
+  const userAuthentication = useSelector((state) => state.auth.token);
 
   return (
     <Routes>
-      {user && <Route path="/" element={<Main />} />}
+      {userAuthentication && <Route path="/" element={<Main />} />}
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Navigate replace to="login" />} />

@@ -52,7 +52,7 @@ export const Main = () => {
     setPage((prevState) => prevState + 1);
   };
 
-  const handleCategory = (clickedCategory) => {
+  const handleChangeCategory = (clickedCategory) => {
 
     if (category !== clickedCategory) {
         setCategory(clickedCategory);
@@ -77,7 +77,7 @@ export const Main = () => {
                 key={item}
                 cat={item}
                 isActive={category === formatCategory}
-                onClick={() => handleCategory(formatCategory)}
+                onClick={() => handleChangeCategory(formatCategory)}
               />
             )
           })}
