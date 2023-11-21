@@ -10,10 +10,10 @@ function App() {
 
   return (
     <Routes>
-      {user && <Route path="/miraplay_test_client/" element={<Main />} />}
-      <Route path="/miraplay_test_client/signup" element={<Signup />} />
-      <Route path="/miraplay_test_client/login" element={<Login />} />
-      <Route path="/miraplay_test_client/" element={<Navigate replace to="login" />} />
+      {user && <Route path="/" element={<Main />} />}
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Navigate replace to="login" />} />
     </Routes>
   );
 }
