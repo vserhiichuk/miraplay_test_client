@@ -32,7 +32,7 @@
     }
   
     &__name {
-      color: #eaeaea;
+      color: var(--main-text-color);
       font-size: 22px;
       font-weight: 800;
       line-height: 36px;
@@ -52,7 +52,7 @@
       align-items: center;
       backdrop-filter: blur(10px);
       border-radius: 10px;
-      color: #eaeaea;
+      color: var(--main-text-color);
       display: flex;
       padding: 5px 10px;
   

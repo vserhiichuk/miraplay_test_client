@@ -1,5 +1,5 @@
 .navbar {
-  font-family: Neue Machina;
+  font-family: var(--font-family);
   width: 100%;
   height: 90px;
   background-color: #1d1d1d;
@@ -17,7 +17,7 @@
     justify-content: space-between;
 
     &--title {
-      color: white;
+      color: #fff;
       font-size: 25px;
     }
 
@@ -35,7 +35,7 @@
 
       border: 1px solid #454545;
       border-radius: 10px;
-      color: #eaeaea;
+      color: var(--main-text-colot);
       font-weight: 700;
       padding: 10px 35px;
 
@@ -85,7 +85,7 @@
       outline: none;
       background: rgba(63, 156, 20, 0.5);
       border: 1px solid #3f9c14;
-      color: #eaeaea;
+      color: var(--main-text-color);
       font-size: 14px;
       font-weight: 800;
       margin-right: 0;

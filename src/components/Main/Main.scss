@@ -1,11 +1,11 @@
 .games {
-  font-family: Neue Machina;
+  font-family: var(--font-family);
   
   margin-inline: 170px;
 
   &__title {
     margin-top: 20px;
-    color: white;
+    color: var(--main-text-color);
   }
 
   &__categories {
@@ -21,7 +21,7 @@
     background-color: #242424;
     border: 1px solid #454545;
     border-radius: 20px;
-    color: #eaeaea;
+    color: var(--main-text-color);
     cursor: pointer;
     display: block;
     font-size: 14px;
